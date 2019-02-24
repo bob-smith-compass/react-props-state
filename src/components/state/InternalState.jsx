@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class InternalState extends Component {
     constructor(props) {
@@ -14,6 +14,9 @@ export default class InternalState extends Component {
   render() {
     return (
       <div>
+      <div>
+        <span>{this.state.name}</span> is a <span>{this.state.title}</span>
+      </div>
         Name: <input type="text" value={this.state.name}/>
         Title: <input type="text" value={this.state.title}/>
         <button onClick={() => this.setState({title: 'New title'})}>Update</button>
