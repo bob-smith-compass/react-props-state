@@ -9,7 +9,7 @@ class App extends Component {
       
         <h3>Props</h3>
         <h3>State</h3>
-        <List />
+        <List names={this.state.names}/>
         
       </div>
     );
