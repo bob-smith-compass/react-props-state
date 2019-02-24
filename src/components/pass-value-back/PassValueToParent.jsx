@@ -5,8 +5,8 @@ export default function PassValueToParent({ parentSupplies }) {
     let textInput = React.createRef();
     let sendToParent = function() {
         // console.log(textInput); // entire input object
-        console.log(textInput.current.defaultValue);
-        parentSupplies(textInput);
+        // console.log(textInput.current.defaultValue);
+        parentSupplies(textInput.current.defaultValue);
     }
 
     return (

@@ -10,7 +10,7 @@ export default function List(props) {
 
   }
   let getChildValue = function(fromChild) {
-    alert(`Child passed ${fromChild}`)
+    alert(`Parent: child passed ${fromChild}`)
   }
   return (
     <div style={{border: "solid 1px green", padding: "5px"}}>
