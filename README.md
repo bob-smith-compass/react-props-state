@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# JSX
+{ any valid JS expression! Not like Angular which has its own temlating syntax}
+
 ## Available Scripts
 
 In the project directory, you can run:
