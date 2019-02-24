@@ -1,5 +1,6 @@
 import React from 'react';
 import './list-element.css';
+import InternalState from '../state/InternalState';
 
 export default function ListElement(props) {
     let handleClick = function(selected) {
@@ -11,6 +12,7 @@ export default function ListElement(props) {
     
       <h3 onClick={handleClick}>List Element</h3>
       <h3 onClick={(e) => { console.log(this); return this; }} className="clickable">{props.name}</h3>
+      <InternalState />
     </div>
   )
 }
