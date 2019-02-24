@@ -9,25 +9,27 @@ import Continue from './components/quiz/continue/Continue'
 import Footer from './components/quiz/footer/Footer';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.names = props.names;
     this.selected = props.selected;
   }
   render() {
     return (
-    <div style={{border: "solid 1px gray", padding: "5px"}}>
-      
+      <div className="container" style={{ border: "solid 1px gray", padding: "5px" }}>
+
         <h3>Props</h3>
         <h3>State</h3>
         {/* uncomment to see entire application */}
         {/* <ReactLifecycle /> */}
         {/* <List names={this.names} selected={this.selected}/> */}
-        <Hero />
-        <Turn />
-        <Continue />
-        <Footer />
-        
+        <div className="jumbotron">
+          <Hero />
+          <Turn />
+        </div>
+          <Continue />
+          <Footer />
+
       </div>
     );
   }
