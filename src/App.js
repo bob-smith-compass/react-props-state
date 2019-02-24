@@ -6,6 +6,7 @@ import ReactLifecycle from './components/lifecycle/ReactLifecycle';
 import Hero from './components/quiz/hero/Hero'
 import Turn from './components/quiz/turn/Turn'
 import Continue from './components/quiz/continue/Continue'
+import Footer from './components/quiz/footer/Footer';
 
 class App extends Component {
   constructor(props){
@@ -25,6 +26,7 @@ class App extends Component {
         <Hero />
         <Turn />
         <Continue />
+        <Footer />
         
       </div>
     );
