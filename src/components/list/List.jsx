@@ -1,6 +1,7 @@
 import React from 'react';
 import ListElement from '../list-element/ListElement';
 import SimpleComponent from '../simple/SimpleComponent';
+import PassValueToParent from '../pass-value-back/PassValueToParent';
 
 export default function List(props) {
   let passedValues = {
@@ -10,6 +11,8 @@ export default function List(props) {
   }
   return (
     <div style={{border: "solid 1px green", padding: "5px"}}>
+      <h3>Get Child Value:</h3>
+      <PassValueToParent />
       <h3>List <SimpleComponent name="Required" /></h3>
       <SimpleComponent name="David" title="FE Developer" />
       <SimpleComponent {...passedValues} />
