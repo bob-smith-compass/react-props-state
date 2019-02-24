@@ -7,7 +7,7 @@ export default function List(props) {
       <h3>List</h3>
       {props.names.map((e, i) => {
           return <div key={i}>
-              <ListElement name={e} />
+              {i}. <ListElement name={e} />
           </div>
       })}
     </div>
