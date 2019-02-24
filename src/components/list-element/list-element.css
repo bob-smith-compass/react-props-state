@@ -1,0 +1,8 @@
+.clickable {
+    background-color: lightgray;
+    cursor: pointer;
+    padding: 5px;
+}
+.clickable:hover {
+    background-color: lightyellow;
+}
