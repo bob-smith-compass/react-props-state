@@ -6,6 +6,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.names = props.names;
+    this.selected = props.selected;
   }
   render() {
     return (
@@ -13,7 +14,7 @@ class App extends Component {
       
         <h3>Props</h3>
         <h3>State</h3>
-        <List names={this.names}/>
+        <List names={this.names} selected={this.selected}/>
         
       </div>
     );

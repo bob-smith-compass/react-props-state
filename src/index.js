@@ -5,10 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const state = {
-    names: ["David", "John", "Bob"]
+    names: ["David", "John", "Bob"],
+    selected: false
 };
 
-ReactDOM.render(<App names={["David", "John", "Bob"]}/>, document.getElementById('root'));
+ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
