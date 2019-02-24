@@ -9,15 +9,15 @@ export default function Turn(props) {
       backgroundColor: "lightgreen", padding: "5px"
     }}>
     <div className="col-4 offset-1" style={{border: "solid 1px red"}}>
-    x
+    <img src="http://placeimg.com/640/480/animals" alt=""/>
 
     </div>
-    <div className="col-6 offset-1" style={{border: "solid 1px red"}}>
-    {["John", "Bob", "Pete"].map((e) => <p>{e}</p>)}
-    {props.books.map((e) => <p>{e}</p>)}
+    <div className="col-6 offset-1" style={{border: "solid 1px red"}} >
+    {["John", "Bob", "Pete"].map((e, i) => <p key={i}>{e}</p>)}
+    {props.books.map((e, i) => <p key={i}>{e}</p>)}
 
     </div>
-x
+Z
         
       </div>
     )

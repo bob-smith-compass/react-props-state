@@ -21,8 +21,8 @@ class App extends Component {
         <h3>Props</h3>
         <h3>State</h3>
         {/* uncomment to see entire application */}
-        {/* <ReactLifecycle /> */}
-        {/* <List names={this.names} selected={this.selected}/> */}
+        <ReactLifecycle />
+        <List names={this.names} selected={this.selected}/>
         <div className="jumbotron">
           <Hero />
           <Turn authors={['A', 'B', 'C']} books={[1,2,3]}/>

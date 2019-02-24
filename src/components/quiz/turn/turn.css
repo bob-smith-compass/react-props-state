@@ -1,3 +1,6 @@
 .turn {
     background-color: lightyellow;
 }
+img {
+    max-width: 300px;
+}
