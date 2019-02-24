@@ -25,7 +25,7 @@ class App extends Component {
         {/* <List names={this.names} selected={this.selected}/> */}
         <div className="jumbotron">
           <Hero />
-          <Turn />
+          <Turn authors={['A', 'B', 'C']} books={[1,2,3]}/>
         </div>
           <Continue />
           <Footer />
