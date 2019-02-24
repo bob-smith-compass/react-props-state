@@ -8,7 +8,7 @@ const state = {
     names: ["David", "John", "Bob"]
 };
 
-ReactDOM.render(<App names={state.names}/>, document.getElementById('root'));
+ReactDOM.render(<App names={["David", "John", "Bob"]}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
