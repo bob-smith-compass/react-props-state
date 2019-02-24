@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './css/bootstrap.min.css';
 import List from './components/list/List';
 
 class App extends Component {
