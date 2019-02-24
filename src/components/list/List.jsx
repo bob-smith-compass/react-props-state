@@ -9,10 +9,13 @@ export default function List(props) {
     title: "Solution Architect",
 
   }
+  let getChildValue = function(fromChild) {
+    alert(`Child passed ${fromChild}`)
+  }
   return (
     <div style={{border: "solid 1px green", padding: "5px"}}>
       <h3>Get Child Value:</h3>
-      <PassValueToParent />
+      <PassValueToParent parentSupplies={getChildValue} />
       <h3>List <SimpleComponent name="Required" /></h3>
       <SimpleComponent name="David" title="FE Developer" />
       <SimpleComponent {...passedValues} />
