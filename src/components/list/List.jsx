@@ -5,6 +5,7 @@ export default function List(props) {
   return (
     <div style={{border: "solid 1px green", padding: "5px"}}>
       <h3>List</h3>
+      {props.names}
       <ListElement />
     </div>
   )
