@@ -3,6 +3,9 @@ import './App.css';
 import './css/bootstrap.min.css';
 import List from './components/list/List';
 import ReactLifecycle from './components/lifecycle/ReactLifecycle';
+import Hero from './components/quiz/hero/Hero'
+import Turn from './components/quiz/turn/Turn'
+import Continue from './components/quiz/continue/Continue'
 
 class App extends Component {
   constructor(props){
@@ -16,8 +19,12 @@ class App extends Component {
       
         <h3>Props</h3>
         <h3>State</h3>
-        <ReactLifecycle />
-        <List names={this.names} selected={this.selected}/>
+        {/* uncomment to see entire application */}
+        {/* <ReactLifecycle /> */}
+        {/* <List names={this.names} selected={this.selected}/> */}
+        <Hero />
+        <Turn />
+        <Continue />
         
       </div>
     );
