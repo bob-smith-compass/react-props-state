@@ -12,7 +12,8 @@ export default class Turn extends Component {
 
     </div>
     <div className="col-6 offset-1" style={{border: "solid 1px red"}}>
-    y
+    {["John", "Bob", "Pete"].map((e) => <p>{e}</p>)}
+    {/* {props.books.map((e) => <p>{e}</p>)} */}
 
     </div>
 x
