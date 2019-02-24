@@ -3,10 +3,16 @@ import ListElement from '../list-element/ListElement';
 import SimpleComponent from '../simple/SimpleComponent';
 
 export default function List(props) {
+  let passedValues = {
+    name: "John",
+    title: "Solution Architect",
+
+  }
   return (
     <div style={{border: "solid 1px green", padding: "5px"}}>
       <h3>List <SimpleComponent name="Required" /></h3>
       <SimpleComponent name="David" title="FE Developer" />
+      <SimpleComponent {...passedValues} />
       <h4>{props.selected? "Selected":"Nothing selected"}</h4>
       {props.names.map((e, i) => {
           return <div key={i}>
