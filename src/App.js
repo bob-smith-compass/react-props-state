@@ -28,11 +28,11 @@ class App extends Component {
         {/* <ReactLifecycle /> */}
         {/* <List names={this.names} selected={this.selected}/> */}
         <div className="jumbotron">
-        {this.authors.map((e, i) => {return <div key={i}>{e.name}</div>  })}
+        {/* {this.authors.map((e, i) => {return <div key={i}>{e.name}</div>  })} */}
           <Hero />
           <Turn authors={this.authors} books={this.books} author={this.author}/>
-        </div>
           <Continue />
+        </div>
           <Footer />
 
       </div>
