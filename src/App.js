@@ -7,6 +7,7 @@ import Hero from './components/quiz/hero/Hero'
 import Turn from './components/quiz/turn/Turn'
 import Continue from './components/quiz/continue/Continue'
 import Footer from './components/quiz/footer/Footer';
+import Reloader from './components/quiz/reloader/Reloader';
 
 class App extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ class App extends Component {
           <Hero />
           <Turn authors={this.authors} books={this.books} author={this.author}/>
           <Continue />
+          <Reloader />
         </div>
           <Footer />
 
