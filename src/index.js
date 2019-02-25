@@ -34,14 +34,17 @@ const view = (model) => {
         <div>{minutes}:{seconds}</div>
     )
 };
+/**
+ * uncomment for simple Redux
 const render = () => {
     ReactDOM.render(view(model), document.getElementById('root'));
 } ;
-render();
+render(); 
 setInterval(()=> {
     model = update(model, 'TICK');
     render();
 }, 1000)
+ */
 
 /**
  * Redux
@@ -50,7 +53,7 @@ setInterval(()=> {
 function reducer(state, action) {
     
 }
-let store = Redux.createStore(reducer);
+// let store = Redux.createStore(reducer);
 
 
 const authors = [
@@ -151,18 +154,16 @@ function AddAuthWrapper(){
  * State
  * Redux
  */
-ReactDOM.render(view(model), document.getElementById('root'));
+// ReactDOM.render(view(model), document.getElementById('root'));
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
-/**
- * 
  ReactDOM.render(<BrowserRouter>
     <React.Fragment>
     <Route exact path="/" component={Navigator} />
     <Route path="/add" component={AddAuthWrapper} />
     </React.Fragment>
     </BrowserRouter>, document.getElementById('root'));
-*/
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
