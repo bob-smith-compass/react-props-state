@@ -10,6 +10,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # react-redux
 
+`yarn add redux react-redux`
+
 ## connect
     * mapStateToProps
     * mapDispatchToProps
