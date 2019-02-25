@@ -9,7 +9,9 @@ export default class Form extends Component {
             password: "",
             email: "",
             city: ""
-        }
+        };
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.onFieldChange = this.onFieldChange.bind(this);
     }
     handleSubmit() {
         console.log(`Submitting ${123}`);
@@ -31,7 +33,7 @@ export default class Form extends Component {
                 {this.state.city}
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <input name="firstName" onChange={this.onFieldChange} type="text" defaultValue={'Initial Value'} />
+                        <input value={this.state.firstName} name="firstName" onChange={this.onFieldChange} type="text" value={this.state.firstName} defaultValue={'Initial Value'} />
                     </div>
                     <div className="form-group">
                         <textarea name="" id="" cols="30" rows="10" defaultValue={"Default value"}>
@@ -49,15 +51,15 @@ export default class Form extends Component {
                     </div>
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email address</label>
-                        <input name="lasttName" onChange={this.onFieldChange} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <input value={this.state.lasttName} name="lasttName" onChange={this.onFieldChange} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                         <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
-                        <input name="password" onChange={this.onFieldChange} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        <input value={this.state.email} name="password" onChange={this.onFieldChange} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                     </div>
                     <div className="form-group form-check">
-                        <input name="email" onChange={this.onFieldChange} type="checkbox" className="form-check-input" id="exampleCheck1" />
+                        <input value={this.state.city} name="email" onChange={this.onFieldChange} type="checkbox" className="form-check-input" id="exampleCheck1" />
                         <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>

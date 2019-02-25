@@ -8,11 +8,27 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# Routing
+
+```<Route exact ...>
+<Route path="/single/:id" component={Single}>
+function Single({match}) {
+    return <div>{match.param.di}</div>
+}
+```
+
 # JSX
 { any valid JS expression! Not like Angular which has its own temlating syntax}
 
+# Form validation
+`react-jsonschema-form`
+[https://mozilla-services.github.io/react-jsonschema-form/](https://mozilla-services.github.io/react-jsonschema-form/)
+Disable HTML 5 Validation
+noHTML5Validate
+
 # PropTypes
 
+```  // An object taking on a particular shape
 ```  // An object taking on a particular shape
   optionalObjectWithShape: PropTypes.shape({
     color: PropTypes.string,
