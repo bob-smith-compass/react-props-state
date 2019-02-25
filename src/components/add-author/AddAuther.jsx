@@ -51,7 +51,12 @@ export default class Form extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         {/* defaultValue={'Initial Value'}  */}
-                        <input value={this.state.firstName} name="firstName" onChange={this.onFieldChange} type="text" value={this.state.firstName} />
+                        <label htmlFor="fNmae">First Name</label>
+                        <input value={this.state.firstName} name="firstName" id="fNmae" onChange={this.onFieldChange} type="text" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="lName">Last Name</label>
+                        <input value={this.state.lastName} name="lastName" id="lName" onChange={this.onFieldChange} type="text" />
                     </div>
                     <div className="form-group">
                         <textarea name="" id="tfirst" cols="40" rows="3" defaultValue={"Default value"}>
@@ -74,7 +79,7 @@ export default class Form extends Component {
                     </div>
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
-                        <input value={this.state.email} name="password" onChange={this.onFieldChange} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        <input value={this.state.password} name="password" onChange={this.onFieldChange} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                     </div>
                     <div className="form-group form-check">
                         <input value={this.state.city} name="city" onChange={this.onFieldChange} type="checkbox" className="form-check-input" id="exampleCheck1" />
