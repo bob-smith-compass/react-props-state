@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  {BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {shuffle, sample} from 'underscore';
+import { shuffle, sample } from 'underscore';
+import AddAuther from './components/add-author/AddAuther';
 
 const authors = [
     {
@@ -12,9 +13,9 @@ const authors = [
         imageUrl: 'http://placeimg.com/640/480/animals',
         imageSource: 'http://placeimg.com',
         books: [
-            {title: 'Title 1'},
-            {title: 'Title 2'},
-            {title: 'Title 3'}
+            { title: 'Title 1' },
+            { title: 'Title 2' },
+            { title: 'Title 3' }
         ]
     },
     {
@@ -22,9 +23,9 @@ const authors = [
         imageUrl: 'http://placeimg.com/640/480/animals',
         imageSource: 'http://placeimg.com',
         books: [
-            {title: 'Title A'},
-            {title: 'Title B'},
-            {title: 'Title C'}
+            { title: 'Title A' },
+            { title: 'Title B' },
+            { title: 'Title C' }
         ]
     },
     {
@@ -32,22 +33,22 @@ const authors = [
         imageUrl: 'http://placeimg.com/640/480/animals',
         imageSource: 'http://placeimg.com',
         books: [
-            {title: 'Title X'},
-            {title: 'Title Y'},
-            {title: 'Title Z'}
+            { title: 'Title X' },
+            { title: 'Title Y' },
+            { title: 'Title Z' }
         ]
     }
 ];
 /**
  * utility functions
  */
-let getTurnData = function(authors) {
+let getTurnData = function (authors) {
     let allBooks = authors.reduce((acc, cur, i) => {
         // console.log(acc, cur);
         return acc.concat(cur.books);
     }, []);
     // return mixThem;
-    const fourRandomBooks = shuffle(allBooks).slice(0,4);
+    const fourRandomBooks = shuffle(allBooks).slice(0, 4);
     const answer = sample(fourRandomBooks);
     return {
         books: fourRandomBooks,
@@ -55,7 +56,7 @@ let getTurnData = function(authors) {
             // console.log(author);
             let result = author.books.some((title) => {
                 // console.log(title);
-                return(title===answer);
+                return (title === answer);
             });
             return result;
         })
@@ -81,13 +82,16 @@ const state = {
 
 function Navigator() {
     return (
-    <App {...state}/>
+        <App {...state} />
     )
 };
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
 ReactDOM.render(<BrowserRouter>
-<Route exact path="/" component={Navigator} />
+    <React.Fragent>
+        <Route exact path="/" component={Navigator} />
+        <Route exact path="/add" component={AddAuther} />
+    </React.Fragent>
 </BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
