@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './turn.css';
+import Book from '../book/Book';
 
 export default function Turn(props) {
   // constructor({authors, books}) {
@@ -13,8 +14,8 @@ export default function Turn(props) {
 
     </div>
     <div className="col-6 offset-1" style={{border: "solid 1px red"}} >
-    {["John", "Bob", "Pete"].map((e, i) => <p key={i}>{e}</p>)}
-    {props.books.map((e, i) => <p key={i}>{e.title}</p>)}
+    {props.authors.map((e, i) => <p key={i}>{e.name}</p>)}
+    {props.books.map((e, i) => <Book {...e} key={i}></Book>)}
 
     </div>
 Z

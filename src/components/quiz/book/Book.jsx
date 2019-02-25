@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './book.css';
 
 export default function Book(props) {
   return (
-    <div>
+    <div className="book">
       <div>{props.title}</div>
     </div>
   )
