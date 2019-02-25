@@ -7,6 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import { shuffle, sample } from 'underscore';
 import AddAuther from './components/add-author/AddAuther';
 
+let model = {}
+
 const authors = [
     {
         name: 'John',
