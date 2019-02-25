@@ -36,7 +36,7 @@ class App extends Component {
           <Hero />
           <Turn authors={this.authors} books={this.books} author={this.author} highlight={this.highlight}/>
           <Continue />
-          <p><Link to="/add">Add author</Link></p>
+          <p><Link className="btn btn-danger" to="/add">Add author</Link></p>
           <Reloader />
           <Form />
         </div>

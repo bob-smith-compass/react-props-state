@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# Ref
+`React.createRef()`
+
 # Routing
 `yarn add react-router-dom`
 ## BrowserRouter
