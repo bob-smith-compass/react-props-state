@@ -59,9 +59,7 @@ export default class Form extends Component {
                         <input value={this.state.lastName} name="lastName" id="lName" onChange={this.onFieldChange} type="text" />
                     </div>
                     <div className="form-group">
-                        <textarea name="" id="tfirst" cols="40" rows="3" defaultValue={"Default value"}>
-                            {/* Not like HTML */}
-                        </textarea>
+                        <textarea name="textArea" id="textArea" cols="40" rows="3"  value={this.state.textArea} onChange={this.onFieldChange} />
                     </div>
                     <div className="form-group">
                         <select name="" id="" value={'Two'} onChange={this.onFieldChange}>

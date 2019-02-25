@@ -21,6 +21,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Redux
 
+## Without Redux ( move data all the way up and down a component )
+Can re-use a component everywhere whithout any changes, with Redux you also have to move the State setup
+
+
 In MVI Application `state container` = `Store` in Redux
 
 ## getState()
