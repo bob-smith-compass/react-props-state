@@ -25,7 +25,9 @@ export default class Form extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.onFieldChange = this.onFieldChange.bind(this);
     }
-    handleSubmit() {
+    handleSubmit(event) {
+        event.preventDefault();
+
         console.log(`Submitting ${123}`);
     }
     onFieldChange(event) {
