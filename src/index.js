@@ -22,15 +22,15 @@ let intents = {
 const update = (model, intent) => {
     const updates = {
         'TICK': (model) => {
-            return Object.assign(model, {time: model.time + 1});
+            return Object.assign(model, { time: model.time + 1 });
         }
     }
     return updates[intent](model);
 }
 const view = (model) => {
-    let minutes = Math.floor(model.time/60);
-    let seconds = model.time -  (minutes * 60);
-    return(
+    let minutes = Math.floor(model.time / 60);
+    let seconds = model.time - (minutes * 60);
+    return (
         <div>{minutes}:{seconds}</div>
     )
 };
@@ -51,9 +51,19 @@ setInterval(()=> {
  */
 // let container = Redux.createStore()
 function reducer(state, action) {
-    
+
 }
 let store = Redux.createStore(reducer);
+function ReduxApp() {
+    return <ReactRedux.Provider store={store} >
+        <BrowserRouter>
+            <React.Fragment>
+                <Route exact path="/" component={Navigator} />
+                <Route path="/add" component={AddAuthWrapper} />
+            </React.Fragment>
+        </BrowserRouter>
+    </ReactRedux.Provider>
+}
 
 
 const authors = [
@@ -135,8 +145,8 @@ function Navigator() {
     )
 };
 // function AddAuthWrapper = withRouter({history}){
-function AddAuthWrapper(){
-    return <AddAuther onAddAuthor={console.log}/>
+function AddAuthWrapper() {
+    return <AddAuther onAddAuthor={console.log} />
 }
 
 
@@ -157,12 +167,15 @@ function AddAuthWrapper(){
 // ReactDOM.render(view(model), document.getElementById('root'));
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
- ReactDOM.render(<BrowserRouter>
+/**
+ * 
+ */
+ReactDOM.render(<BrowserRouter>
     <React.Fragment>
-    <Route exact path="/" component={Navigator} />
-    <Route path="/add" component={AddAuthWrapper} />
+        <Route exact path="/" component={Navigator} />
+        <Route path="/add" component={AddAuthWrapper} />
     </React.Fragment>
-    </BrowserRouter>, document.getElementById('root'));
+</BrowserRouter>, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
