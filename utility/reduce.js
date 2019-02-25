@@ -30,3 +30,20 @@ months.splice(4, 1, 'May');
 // replaces 1 element at 4th index
 console.log(months);
 // expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
+
+/**
+ * Promise
+ */
+var promise1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve('foo');
+  }, 300);
+});
+
+promise1.then(function(value) {
+  console.log(value);
+  // expected output: "foo"
+});
+
+console.log(promise1);
+// expected output: [object Promise]

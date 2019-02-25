@@ -9,7 +9,6 @@
 //   )
 // }
 
-
 import React, { Component } from 'react';
 
 export default class Form extends Component {
@@ -55,7 +54,7 @@ export default class Form extends Component {
                         <input value={this.state.firstName} name="firstName" onChange={this.onFieldChange} type="text" value={this.state.firstName} />
                     </div>
                     <div className="form-group">
-                        <textarea name="" id="" cols="40" rows="3" defaultValue={"Default value"}>
+                        <textarea name="" id="tfirst" cols="40" rows="3" defaultValue={"Default value"}>
                             {/* Not like HTML */}
                         </textarea>
                     </div>
