@@ -18,6 +18,7 @@ class App extends Component {
     // this.books = props.turnData.books;
     this.author = props.turnData.author;
     this.books = props.turnData.books;
+    this.highlight = props.highlight;
   }
   render() {
     return (
@@ -31,7 +32,7 @@ class App extends Component {
         <div className="jumbotron">
         {/* {this.authors.map((e, i) => {return <div key={i}>{e.name}</div>  })} */}
           <Hero />
-          <Turn authors={this.authors} books={this.books} author={this.author}/>
+          <Turn authors={this.authors} books={this.books} author={this.author} highlight={this.highlight}/>
           <Continue />
           <Reloader />
         </div>

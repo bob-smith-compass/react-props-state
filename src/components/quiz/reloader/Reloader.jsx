@@ -13,9 +13,9 @@ export default class Reloader extends Component {
         })
     }
     onGoTime(event) {
-        this.setState({
-            content: event.target.value
-        })
+        if(this.state.content !== "reload") {
+            event.preventDefault();
+        }
     }
     render() {
         return (

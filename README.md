@@ -11,6 +11,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # JSX
 { any valid JS expression! Not like Angular which has its own temlating syntax}
 
+# PropTypes
+
+```  // An object taking on a particular shape
+  optionalObjectWithShape: PropTypes.shape({
+    color: PropTypes.string,
+    fontSize: PropTypes.number
+  }),
+
+```
 # External libraries
 
 `yarn add underscore`
