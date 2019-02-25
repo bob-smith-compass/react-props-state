@@ -11,6 +11,12 @@ const model = {
     running: false,
     time: 0
 }
+let intents = {
+    TICK: 'TICK',
+    START: 'START',
+    STOP: 'STOP',
+    RESET: 'RESET',
+}
 const view = (model) => <div>{model.time}</div>;
 
 const authors = [
