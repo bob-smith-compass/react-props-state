@@ -11,6 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # react-redux
 
 `yarn add redux react-redux`
+`import * as Redux from 'redux';`
+`import * as ReactRedux from 'react-redux';`
+
 
 ## connect
     * mapStateToProps
