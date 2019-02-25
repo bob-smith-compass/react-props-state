@@ -14,6 +14,7 @@ class App extends Component {
     this.names = props.names;
     this.selected = props.selected;
     this.authors = props.authors;
+    this.books = props.books;
   }
   render() {
     return (
@@ -27,7 +28,7 @@ class App extends Component {
         <div className="jumbotron">
         {this.authors.map((e, i) => {return <div key={i}>{e.name}</div>  })}
           <Hero />
-          <Turn authors={['A', 'B', 'C']} books={[1,2,3]}/>
+          <Turn authors={this.authors} books={this.books}/>
         </div>
           <Continue />
           <Footer />

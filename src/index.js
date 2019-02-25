@@ -9,7 +9,11 @@ const authors = [
         name: 'John',
         imageUrl: 'http://placeimg.com/640/480/animals',
         imageSource: 'http://placeimg.com',
-        books: ['A', 'B', ['C']],
+        books: [
+            {title: 'Title 1'},
+            {title: 'Title 2'},
+            {title: 'Title 3'}
+        ],
     }
 ];
 const state = {

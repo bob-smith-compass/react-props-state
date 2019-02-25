@@ -14,7 +14,7 @@ export default function Turn(props) {
     </div>
     <div className="col-6 offset-1" style={{border: "solid 1px red"}} >
     {["John", "Bob", "Pete"].map((e, i) => <p key={i}>{e}</p>)}
-    {props.books.map((e, i) => <p key={i}>{e}</p>)}
+    {props.books.map((e, i) => <p key={i}>{e.title}</p>)}
 
     </div>
 Z
