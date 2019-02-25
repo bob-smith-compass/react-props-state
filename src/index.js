@@ -17,7 +17,17 @@ let intents = {
     STOP: 'STOP',
     RESET: 'RESET',
 }
-const view = (model) => <div>{model.time}</div>;
+const view = (model) => {
+    let minutes = Math.floor(model.time/60);
+    let seconds = model.time -  (minutes * 60);
+    return(
+        <div>{minutes}:{seconds}</div>
+    )
+};
+setInterval(()=> {
+    model = update(model, 'TICK');
+    render();
+}, 1000)
 
 const authors = [
     {
