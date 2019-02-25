@@ -90,7 +90,7 @@ function Navigator() {
 ReactDOM.render(<BrowserRouter>
     <React.Fragment>
         <Route exact path="/" component={Navigator} />
-        <Route exact path="/add" component={AddAuther} />
+        <Route path="/add" component={AddAuther} />
     </React.Fragment>
 </BrowserRouter>, document.getElementById('root'));
 
