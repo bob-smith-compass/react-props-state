@@ -8,6 +8,7 @@ import Turn from './components/quiz/turn/Turn'
 import Continue from './components/quiz/continue/Continue'
 import Footer from './components/quiz/footer/Footer';
 import Reloader from './components/quiz/reloader/Reloader';
+import Form from './components/form/Form';
 
 class App extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class App extends Component {
           <Turn authors={this.authors} books={this.books} author={this.author} highlight={this.highlight}/>
           <Continue />
           <Reloader />
+          <Form />
         </div>
           <Footer />
 
