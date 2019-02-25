@@ -51,7 +51,8 @@ export default class Form extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <input value={this.state.firstName} name="firstName" onChange={this.onFieldChange} type="text" value={this.state.firstName} defaultValue={'Initial Value'} />
+                        {/* defaultValue={'Initial Value'}  */}
+                        <input value={this.state.firstName} name="firstName" onChange={this.onFieldChange} type="text" value={this.state.firstName} />
                     </div>
                     <div className="form-group">
                         <textarea name="" id="" cols="40" rows="3" defaultValue={"Default value"}>
@@ -59,11 +60,11 @@ export default class Form extends Component {
                         </textarea>
                     </div>
                     <div className="form-group">
-                        <select name="" id="" value={'Two'}>
+                        <select name="" id="" value={'Two'} onChange={this.onFieldChange}>
                             <option value="One">First</option>
                             {/* HTML */}
                             {/* <option value="Two" selected>Second</option> */}
-                            <option value="Two" selected>Second</option>
+                            <option value="Two">Second</option>
                             <option value="Three">Third</option>
                         </select>
                     </div>
