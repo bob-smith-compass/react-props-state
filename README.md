@@ -11,6 +11,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # JSX
 { any valid JS expression! Not like Angular which has its own temlating syntax}
 
+# External libraries
+
+`yarn add underscore`
+
+* shuffle
+* random
+* and so on
+
 ## Available Scripts
 
 In the project directory, you can run:
