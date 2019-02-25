@@ -85,10 +85,21 @@ function Navigator() {
         <App {...state} />
     )
 };
-const AddAuthWrapper = withRouter({history}){
+// function AddAuthWrapper = withRouter({history}){
+function AddAuthWrapper(){
     return <AddAuther onAddAuthor={console.log}/>
-    
 }
+
+
+// const AddAuthWrapper = withRouter(({history}) {
+//     <AddAuther onAddAuthor={(author) => {
+//         console.log(author)
+//         authors.push(author);
+//         history.push('/');
+//     }}/>
+
+// })
+
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
 ReactDOM.render(<BrowserRouter>

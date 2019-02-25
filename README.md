@@ -34,6 +34,7 @@ function AddAuthWrapper(){
 ```
 
 ## withRouter
+`const AddAuthWrapper = withRouter({history}){`
 
 withRouter allows users to values such as history
 
