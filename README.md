@@ -21,6 +21,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Redux
 
+In MVI Application `state container` = `Store` in Redux
+
 ## getState()
 
 ## dispatch()
