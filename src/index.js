@@ -7,7 +7,11 @@ import * as serviceWorker from './serviceWorker';
 import { shuffle, sample } from 'underscore';
 import AddAuther from './components/add-author/AddAuther';
 
-let model = {}
+const model = {
+    running: false,
+    time: 0
+}
+const view = (model) => <div>{model.time}</div>;
 
 const authors = [
     {
@@ -102,14 +106,23 @@ function AddAuthWrapper(){
 
 // })
 
+/**
+ * MVI
+ * State
+ * Redux
+ */
+ReactDOM.render(view(model), document.getElementById('root'));
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
-ReactDOM.render(<BrowserRouter>
+/**
+ * 
+ ReactDOM.render(<BrowserRouter>
     <React.Fragment>
-        <Route exact path="/" component={Navigator} />
-        <Route path="/add" component={AddAuthWrapper} />
+    <Route exact path="/" component={Navigator} />
+    <Route path="/add" component={AddAuthWrapper} />
     </React.Fragment>
-</BrowserRouter>, document.getElementById('root'));
+    </BrowserRouter>, document.getElementById('root'));
+*/
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

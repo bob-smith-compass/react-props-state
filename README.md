@@ -9,6 +9,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 `git config credential.helper store`
 
 # State - MVI - Redux
+```
+ReactDOM.render(view(model), document.getElementById('root'));
+```
+
 
 # Ref
 `React.createRef()`
