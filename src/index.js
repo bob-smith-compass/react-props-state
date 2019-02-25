@@ -14,8 +14,34 @@ const authors = [
             {title: 'Title 2'},
             {title: 'Title 3'}
         ],
+    },
+    {
+        name: 'Bob',
+        imageUrl: 'http://placeimg.com/640/480/animals',
+        imageSource: 'http://placeimg.com',
+        books: [
+            {title: 'Title A'},
+            {title: 'Title B'},
+            {title: 'Title C'}
+        ],
+    },
+    {
+        name: 'Pete',
+        imageUrl: 'http://placeimg.com/640/480/animals',
+        imageSource: 'http://placeimg.com',
+        books: [
+            {title: 'Title X'},
+            {title: 'Title Y'},
+            {title: 'Title Z'}
+        ],
     }
 ];
+let getTurnData = function(authors) {
+    authors.reduce((e,i) => {
+
+    })
+
+}
 const state = {
     names: ["David", "John", "Bob"],
     selected: false,
@@ -26,6 +52,7 @@ const state = {
     // authors: ["Sean", "Abel", "Jacob"],
     author: authors[0],
     books: authors[0].books,
+    turnData: getTurnData(authors)
 };
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));

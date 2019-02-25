@@ -10,11 +10,12 @@ export default function Turn(props) {
       backgroundColor: "lightgreen", padding: "5px"
     }}>
     <div className="col-4 offset-1" style={{border: "solid 1px red"}}>
-    <img src="http://placeimg.com/640/480/animals" alt=""/>
+          {props.authors.map((e, i) => <p key={i}>{e.name}</p>)}
+      <img src="http://placeimg.com/640/480/animals" alt=""/>
 
     </div>
     <div className="col-6 offset-1" style={{border: "solid 1px red"}} >
-    {props.authors.map((e, i) => <p key={i}>{e.name}</p>)}
+    {/* {props.authors.map((e, i) => <p key={i}>{e.name}</p>)} */}
     {props.books.map((e, i) => <Book {...e} key={i}></Book>)}
 
     </div>
