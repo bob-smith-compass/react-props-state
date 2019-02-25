@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# State - MVI - Redux
+
 # Ref
 `React.createRef()`
 
