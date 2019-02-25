@@ -15,3 +15,18 @@ console.log(array1.reduce(reducer));
 // 5 + 1 + 2 + 3 + 4
 console.log(array1.reduce(reducer, 5));
 // expected output: 15
+
+/**
+ * The splice() method changes the contents of an array 
+ * by removing or replacing existing elements and/or adding new elements.
+ */
+var months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// inserts at 1st index position
+console.log(months);
+// expected output: Array ['Jan', 'Feb', 'March', 'April', 'June']
+
+months.splice(4, 1, 'May');
+// replaces 1 element at 4th index
+console.log(months);
+// expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
