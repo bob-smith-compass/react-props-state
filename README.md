@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# working complete react-redux app
+[Compass/React/react-fundamentals-update/react-fundamentals-update/07/demos/demos/authorquiz](/Users/v738110/Compass/React/react-fundamentals-update/react-fundamentals-update/07/demos/demos/authorquiz)
+
 # react-redux
 
 `yarn add redux react-redux`
