@@ -88,10 +88,10 @@ function Navigator() {
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
 ReactDOM.render(<BrowserRouter>
-    <React.Fragent>
+    <React.Fragment>
         <Route exact path="/" component={Navigator} />
         <Route exact path="/add" component={AddAuther} />
-    </React.Fragent>
+    </React.Fragment>
 </BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
