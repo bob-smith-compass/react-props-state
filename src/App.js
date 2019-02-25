@@ -11,6 +11,7 @@ import Footer from './components/quiz/footer/Footer';
 import Reloader from './components/quiz/reloader/Reloader';
 import Form from './components/form/Form';
 import FormSubmit from './components/form-submit/FormSubmit';
+import QuestionList from './components/question-list/QuestionList';
 
 class App extends Component {
   constructor(props) {
@@ -34,12 +35,13 @@ class App extends Component {
         {/* <List names={this.names} selected={this.selected}/> */}
         <div className="jumbotron">
         {/* {this.authors.map((e, i) => {return <div key={i}>{e.name}</div>  })} */}
-          <Hero />
-          <Turn authors={this.authors} books={this.books} author={this.author} highlight={this.highlight}/>
-          <Continue />
-          <p><Link className="btn btn-danger" to="/add">Add author</Link></p>
-          <Reloader />
-          <Form />
+          {/* <Hero /> */}
+          {/* <Turn authors={this.authors} books={this.books} author={this.author} highlight={this.highlight}/> */}
+          {/* <Continue /> */}
+          {/* <p><Link className="btn btn-danger" to="/add">Add author</Link></p> */}
+          {/* <Reloader /> */}
+          {/* <Form /> */}
+          <QuestionList />
         </div>
           <Footer />
 
