@@ -8,7 +8,7 @@ import { shuffle, sample } from 'underscore';
 import AddAuther from './components/add-author/AddAuther';
 import * as Redux from 'redux';
 import * as ReactRedux from 'react-redux';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 let model = {
     running: false,
@@ -145,8 +145,27 @@ function Navigator() {
         <App {...state} />
     )
 };
+/**
+ * 
+function mapStateToProps(state) {
+    return {
+        names: state.names,
+        selected: state.selected,
+        authors: state.authors,
+        turnData: state.turnData
+    }
+
+}
+function mapDispatchToProps() {
+
+}
+const AddAuthWrapper = connect(mapStateToProps, mapDispatchToProps)(
+    <AddAuther onAddAuthor={console.log} />
+)
+ */
+
 // function AddAuthWrapper = withRouter({history}){
-function AddAuthWrapper() {
+function AddAuthWrapper(){
     return <AddAuther onAddAuthor={console.log} />
 }
 
