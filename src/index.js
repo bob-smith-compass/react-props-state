@@ -14,7 +14,7 @@ const authors = [
             {title: 'Title 1'},
             {title: 'Title 2'},
             {title: 'Title 3'}
-        ],
+        ]
     },
     {
         name: 'Bob',
@@ -24,7 +24,7 @@ const authors = [
             {title: 'Title A'},
             {title: 'Title B'},
             {title: 'Title C'}
-        ],
+        ]
     },
     {
         name: 'Pete',
@@ -34,7 +34,7 @@ const authors = [
             {title: 'Title X'},
             {title: 'Title Y'},
             {title: 'Title Z'}
-        ],
+        ]
     }
 ];
 /**
@@ -51,13 +51,17 @@ let getTurnData = function(authors) {
     return {
         books: fourRandomBooks,
         author: authors.find((author) => {
-            author.books.some((title) => {
+            // console.log(author);
+            let result = author.books.some((title) => {
+                // console.log(title);
                 return(title===answer);
-            })
+            });
+            return result;
         })
     }
 }
-console.log(getTurnData(authors));
+// console.log(getTurnData(authors).books);
+console.log(getTurnData(authors).author);
 /**
  * STATE OF APPLICATION
  */
@@ -69,8 +73,8 @@ const state = {
      */
     authors: authors,
     // authors: ["Sean", "Abel", "Jacob"],
-    author: authors[0],
-    books: authors[0].books,
+    // author: authors[0],
+    // books: authors[0].books,
     turnData: getTurnData(authors)
 };
 
