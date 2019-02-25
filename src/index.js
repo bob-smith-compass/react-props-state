@@ -47,6 +47,11 @@ setInterval(()=> {
  * Redux
  */
 // let container = Redux.createStore()
+function reducer(state, action) {
+    
+}
+let store = Redux.createStore(reducer);
+
 
 const authors = [
     {
