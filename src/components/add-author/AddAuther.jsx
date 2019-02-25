@@ -37,12 +37,15 @@ export default class Form extends Component {
 
         return (
             <div className="container" style={{border: "solid 1px gray", padding: "10px"}}>
+            <div className="container" style={{border: "solid 1px red", padding: "10px", backgroundColor: "yellow", color: "red"}}>
                 {/* <form onSubmit={this.handleSubmit}> */}
                 {this.state.firstName}
                 {this.state.lasttName}
                 {this.state.password}
                 {this.state.email}
                 {this.state.city}
+            </div>
+
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <input value={this.state.firstName} name="firstName" onChange={this.onFieldChange} type="text" value={this.state.firstName} defaultValue={'Initial Value'} />
