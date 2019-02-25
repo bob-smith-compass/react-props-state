@@ -41,6 +41,11 @@ setInterval(()=> {
     render();
 }, 1000)
 
+/**
+ * Redux
+ */
+// let container = Redux.createStore()
+
 const authors = [
     {
         name: 'John',
