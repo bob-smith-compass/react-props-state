@@ -8,6 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# Form Submit handling
+
+[http://localhost:3002/add](http://localhost:3002/add)
+`src/components/add-author/AddAuther.jsx`
+
 # working complete react-redux app
 [Compass/React/react-fundamentals-update/react-fundamentals-update/07/demos/demos/authorquiz](/Users/v738110/Compass/React/react-fundamentals-update/react-fundamentals-update/07/demos/demos/authorquiz)
 

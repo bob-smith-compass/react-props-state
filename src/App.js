@@ -10,6 +10,7 @@ import Continue from './components/quiz/continue/Continue'
 import Footer from './components/quiz/footer/Footer';
 import Reloader from './components/quiz/reloader/Reloader';
 import Form from './components/form/Form';
+import FormSubmit from './components/form-submit/FormSubmit';
 
 class App extends Component {
   constructor(props) {

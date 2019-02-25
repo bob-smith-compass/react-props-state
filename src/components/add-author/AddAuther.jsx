@@ -54,10 +54,10 @@ export default class Form extends Component {
                         <label htmlFor="fNmae">First Name</label>
                         <input value={this.state.firstName} name="firstName" id="fNmae" onChange={this.onFieldChange} type="text" />
                     </div>
-                    <div className="form-group">
+                    {/* <div className="form-group">
                         <label htmlFor="lName">Last Name</label>
                         <input value={this.state.lastName} name="lastName" id="lName" onChange={this.onFieldChange} type="text" />
-                    </div>
+                    </div> */}
                     <div className="form-group">
                         <textarea name="textArea" id="textArea" cols="40" rows="3"  value={this.state.textArea} onChange={this.onFieldChange} />
                     </div>
