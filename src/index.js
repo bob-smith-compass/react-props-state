@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {shuffle} from 'underscore';
+import {shuffle, sample} from 'underscore';
 
 const authors = [
     {
@@ -37,14 +37,30 @@ const authors = [
         ],
     }
 ];
+/**
+ * utility functions
+ */
 let getTurnData = function(authors) {
-    let mixThem = authors.reduce((acc, cur, i) => {
+    let allBooks = authors.reduce((acc, cur, i) => {
         // console.log(acc, cur);
         return acc.concat(cur.books);
     }, []);
-    return mixThem;
+    // return mixThem;
+    const fourRandomBooks = shuffle(allBooks).slice(0,4);
+    const answer = sample(fourRandomBooks);
+    return {
+        books: fourRandomBooks,
+        author: authors.find((author) => {
+            author.books.some((title) => {
+                return(title===answer);
+            })
+        })
+    }
 }
 console.log(getTurnData(authors));
+/**
+ * STATE OF APPLICATION
+ */
 const state = {
     names: ["David", "John", "Bob"],
     selected: false,
