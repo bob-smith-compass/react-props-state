@@ -9,7 +9,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 `git config credential.helper store`
 
 # Routing
-
+## BrowserRouter
+## Router
+## Link
 ```<Route exact ...>
 <Route path="/single/:id" component={Single}>
 function Single({match}) {
