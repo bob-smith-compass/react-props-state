@@ -13,6 +13,7 @@ class App extends Component {
     super(props);
     this.names = props.names;
     this.selected = props.selected;
+    this.authors = props.authors;
   }
   render() {
     return (
@@ -21,9 +22,10 @@ class App extends Component {
         <h3>Props</h3>
         <h3>State</h3>
         {/* uncomment to see entire application */}
-        <ReactLifecycle />
-        <List names={this.names} selected={this.selected}/>
+        {/* <ReactLifecycle /> */}
+        {/* <List names={this.names} selected={this.selected}/> */}
         <div className="jumbotron">
+        {this.authors.map((e, i) => {return <div key={i}>{e.name}</div>  })}
           <Hero />
           <Turn authors={['A', 'B', 'C']} books={[1,2,3]}/>
         </div>

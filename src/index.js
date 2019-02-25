@@ -18,6 +18,8 @@ const state = {
     /**
      * quiz state
      */
+    authors: authors,
+    // authors: ["Sean", "Abel", "Jacob"],
     author: authors[0],
     books: authors[0].books,
 };
