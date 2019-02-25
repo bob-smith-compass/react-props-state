@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './App.css';
 import './css/bootstrap.min.css';
 import List from './components/list/List';
@@ -35,6 +36,7 @@ class App extends Component {
           <Hero />
           <Turn authors={this.authors} books={this.books} author={this.author} highlight={this.highlight}/>
           <Continue />
+          <p><Link to="/add">Add author</Link></p>
           <Reloader />
           <Form />
         </div>
