@@ -46,7 +46,7 @@ export default class Form extends Component {
                 password: {this.state.password}<br />
                 email: {this.state.email}<br />
                 city: {this.state.city}<br />
-           Label:  </div>
+           </div>
 
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
