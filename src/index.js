@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import { shuffle, sample } from 'underscore';
 import AddAuther from './components/add-author/AddAuther';
 
-const model = {
+let model = {
     running: false,
     time: 0
 }
@@ -18,11 +18,12 @@ let intents = {
     RESET: 'RESET',
 }
 const update = (model, intent) => {
-    const update = {
+    const updates = {
         'TICK': (model) => {
             return Object.assign(model, {time: model.time + 1});
         }
     }
+    return updates[intent](model);
 }
 const view = (model) => {
     let minutes = Math.floor(model.time/60);
@@ -31,6 +32,10 @@ const view = (model) => {
         <div>{minutes}:{seconds}</div>
     )
 };
+const render = () => {
+    ReactDOM.render(view(model), document.getElementById('root'));
+} ;
+render();
 setInterval(()=> {
     model = update(model, 'TICK');
     render();

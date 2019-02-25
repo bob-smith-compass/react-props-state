@@ -17,6 +17,12 @@ ReactDOM.render(view(model), document.getElementById('root'));
 ```model = update(model, 'TICK');
 ```
 
+Your own render() function
+
+```YOUR OWN render()
+const render = () => {
+```
+
 
 # Ref
 `React.createRef()`
