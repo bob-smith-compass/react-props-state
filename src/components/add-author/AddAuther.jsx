@@ -27,6 +27,7 @@ export default class Form extends Component {
     }
     handleSubmit(event) {
         event.preventDefault();
+        this.props.onAddAuthor(this.state);
 
         console.log(`Submitting ${123}`);
     }

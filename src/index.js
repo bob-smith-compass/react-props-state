@@ -85,12 +85,16 @@ function Navigator() {
         <App {...state} />
     )
 };
+function AddAuthWrapper(){
+    return <AddAuther onAddAuthor={console.log}/>
+    
+}
 
 // ReactDOM.render(<App names={state.names} selected={state.selected}/>, document.getElementById('root'));
 ReactDOM.render(<BrowserRouter>
     <React.Fragment>
         <Route exact path="/" component={Navigator} />
-        <Route path="/add" component={AddAuther} />
+        <Route path="/add" component={AddAuthWrapper} />
     </React.Fragment>
 </BrowserRouter>, document.getElementById('root'));
 
