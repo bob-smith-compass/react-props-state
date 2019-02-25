@@ -8,6 +8,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# Redux
+
+## getState()
+
+## dispatch()
+
+## subscribe()
+
 # State - MVI - Redux
 ```
 ReactDOM.render(view(model), document.getElementById('root'));
