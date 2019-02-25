@@ -12,6 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```
 ReactDOM.render(view(model), document.getElementById('root'));
 ```
+## dispatch action ( intent )
+
+```model = update(model, 'TICK');
+```
 
 
 # Ref

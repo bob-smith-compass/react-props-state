@@ -17,6 +17,13 @@ let intents = {
     STOP: 'STOP',
     RESET: 'RESET',
 }
+const update = (model, intent) => {
+    const update = {
+        'TICK': (model) => {
+            return Object.assign(model, {time: model.time + 1});
+        }
+    }
+}
 const view = (model) => {
     let minutes = Math.floor(model.time/60);
     let seconds = model.time -  (minutes * 60);
