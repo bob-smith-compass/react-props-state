@@ -26,6 +26,13 @@ function Single({match}) {
 # JSX
 { any valid JS expression! Not like Angular which has its own temlating syntax}
 
+# Form Submition
+```
+FORM VALUES SUBMITTED:
+function AddAuthWrapper(){
+    return <AddAuther onAddAuthor={console.log}/>
+```
+
 # Form validation
 `react-jsonschema-form`
 [https://mozilla-services.github.io/react-jsonschema-form/](https://mozilla-services.github.io/react-jsonschema-form/)
