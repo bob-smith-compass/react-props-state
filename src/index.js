@@ -37,11 +37,13 @@ const authors = [
     }
 ];
 let getTurnData = function(authors) {
-    authors.reduce((e,i) => {
-
-    })
-
+    let mixThem = authors.reduce((acc, cur, i) => {
+        // console.log(acc, cur);
+        return acc.concat(cur.books);
+    }, []);
+    return mixThem;
 }
+console.log(getTurnData(authors));
 const state = {
     names: ["David", "John", "Bob"],
     selected: false,
