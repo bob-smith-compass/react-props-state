@@ -85,7 +85,7 @@ function Navigator() {
         <App {...state} />
     )
 };
-function AddAuthWrapper(){
+const AddAuthWrapper = withRouter({history}){
     return <AddAuther onAddAuthor={console.log}/>
     
 }

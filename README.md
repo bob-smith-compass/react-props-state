@@ -33,6 +33,10 @@ function AddAuthWrapper(){
     return <AddAuther onAddAuthor={console.log}/>
 ```
 
+## withRouter
+
+withRouter allows users to values such as history
+
 # Form validation
 `react-jsonschema-form`
 [https://mozilla-services.github.io/react-jsonschema-form/](https://mozilla-services.github.io/react-jsonschema-form/)
