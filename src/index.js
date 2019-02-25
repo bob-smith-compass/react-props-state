@@ -8,6 +8,7 @@ import { shuffle, sample } from 'underscore';
 import AddAuther from './components/add-author/AddAuther';
 import * as Redux from 'redux';
 import * as ReactRedux from 'react-redux';
+import {connect} from 'react-redux';
 
 let model = {
     running: false,
