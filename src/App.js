@@ -12,6 +12,7 @@ import Reloader from './components/quiz/reloader/Reloader';
 import Form from './components/form/Form';
 import FormSubmit from './components/form-submit/FormSubmit';
 import QuestionList from './components/question-list/QuestionList';
+import Layout from './components/layout/Layout';
 
 class App extends Component {
   constructor(props) {
@@ -41,7 +42,8 @@ class App extends Component {
           {/* <p><Link className="btn btn-danger" to="/add">Add author</Link></p> */}
           {/* <Reloader /> */}
           {/* <Form /> */}
-          <QuestionList />
+          <Layout >
+          </Layout>
         </div>
           <Footer />
 
