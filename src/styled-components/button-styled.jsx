@@ -44,7 +44,7 @@ export default function SButton() {
     </MButton>
             <MButton
                 href="https://www.styled-components.com/docs/basics#extending-styles" 
-                prefetch
+                // prefetch // Warning: Received `true` for a non-boolean attribute `prefetch`.
                 target="_blank"
                 primary
             >

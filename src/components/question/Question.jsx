@@ -16,7 +16,7 @@ export default function Question(props) {
             <br />
             <button className="btn btn-primary">{props.question.points}</button>
             <br />
-            <div className="card" style={{width: "18 rem;"}}>
+            <div className="card" style={{width: "18 rem"}}>
                 <img className="card-img-top" src="http://placeimg.com/640/480/animals" alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
