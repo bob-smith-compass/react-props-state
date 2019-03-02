@@ -39,7 +39,7 @@ export default function SButton() {
                 GitHub
     </MButton>
 
-            <MButton as={Link} href="https://www.styled-components.com/" prefetch>
+            <MButton as={Link} href="https://www.styled-components.com/" prefetch="true">
                 Documentation
     </MButton>
             <MButton
