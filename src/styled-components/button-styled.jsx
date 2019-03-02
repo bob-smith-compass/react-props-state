@@ -29,6 +29,7 @@ export default function SButton() {
 
     return (
         <div>
+            {/* <MButton className="btn primary" */} {/* WILL NOT WORK */}
             <MButton className="btn primary"
                 href="https://github.com/styled-components/styled-components"
                 target="_blank"
@@ -40,6 +41,14 @@ export default function SButton() {
 
             <MButton as={Link} href="https://www.styled-components.com/" prefetch>
                 Documentation
+    </MButton>
+            <MButton
+                href="https://www.styled-components.com/docs/basics#extending-styles" 
+                prefetch
+                target="_blank"
+                primary
+            >
+                Extend Styled Components
     </MButton>
         </div>
     );
