@@ -1,11 +1,11 @@
 
-import React from 'react'
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { Link } from '@material-ui/core';
 
 
 
-const Button = styled.a`
+const MButton = styled.a`
   /* This renders the buttons above... Edit me! */
   display: inline-block;
   border-radius: 3px;
@@ -29,18 +29,18 @@ export default function SButton() {
 
     return (
         <div>
-            <Button
+            <MButton className="btn primary"
                 href="https://github.com/styled-components/styled-components"
                 target="_blank"
                 rel="noopener"
                 primary
             >
                 GitHub
-    </Button>
+    </MButton>
 
-            <Button as={Link} href="https://www.styled-components.com/" prefetch>
+            <MButton as={Link} href="https://www.styled-components.com/" prefetch>
                 Documentation
-    </Button>
+    </MButton>
         </div>
     );
 }
