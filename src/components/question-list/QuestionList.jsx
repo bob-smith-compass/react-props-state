@@ -6,9 +6,9 @@ export default class QuestionList extends Component {
         super(props);
         this.quesions = [
             {q: "how?", points: 5},
-            {q: "how?", points: 5},
-            {q: "how?", points: 5},
-            {q: "how?", points: 5},
+            {q: "how?", points: 3},
+            {q: "how?", points: 4},
+            {q: "how?", points: 7},
         ]
     }
   render() {

@@ -8,6 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Git
 `git config credential.helper store`
 
+# Material UI
+
+`yarn add @material-ui/core`
+
+
 # Form Submit handling
 
 [http://localhost:3002/add](http://localhost:3002/add)
